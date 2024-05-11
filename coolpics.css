@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+:root {
+--primary-color: #52489c;
+--secondary-color: #59c3c3;
+--accent-color: #f45b69;
+--text-dark: #333;
+--text-light: #ebebeb;
+--primary-font: Arial, Helvetica,sans-serif;
+--secondary-font: Mooli, san-serif;
+
+.Gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.Gallery figure {
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+}
+
+.Gallery img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+}
+
+main h1{
+    text-align: center;
+}
+header {
+    background-color: var(--primary-color);
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text-light);
+    font-family: var(--primary-font);
+  }
+  
+  header nav a:hover {
+    color: var(--secondary-color);
+  }
+  header h1{
+    text-align: center;
+    color: var(--text-light);
+  }
+  footer{
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+  }
+  @media screen and (min-width: 700px) {
+    .gallery {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
