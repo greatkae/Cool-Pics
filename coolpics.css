@@ -60,7 +60,7 @@ header {
     text-align: center;
   }
   @media screen and (min-width: 700px) {
-    .Gallery {
+    .allery {
       grid-template-columns: 1fr 1fr;
     }
   }
